@@ -1,0 +1,160 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background-color: rgb(250, 0, 0);
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  height: 50px;
+  padding: 10px 10px;
+}
+
+.article1 h1, .article2 h1 {
+  font-size: 5rem;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.article2 h1 {
+  color: white;
+}
+
+.img img, .img2 img {
+  height: 367px;
+  width: 500px;
+  border-top-left-radius: 50%;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.hamb {
+  display: none;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  height: 200px;
+}
+
+.btns, .btn2 {
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+  justify-content: center;
+  background-color: #1c348c;
+  align-self: flex-start;
+  width: 300px;
+  color: white;
+}
+
+.article1, .article2 {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.article1 p, .article2 p {
+  color: white;
+  font-size: 29px;
+}
+
+.article2 {
+  background: #000000;
+  background: linear-gradient(2deg, rgb(0, 0, 0) 0%, rgb(140, 140, 21) 50%, rgb(176, 191, 10) 100%);
+}
+@keyframes cogu {
+  0% {
+    transform: translateY(10px);
+    rotateX: 360deg;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.article2 img {
+  animation: cogu 3s infinite;
+}
+
+.btn2 {
+  background-color: #eab102;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 900px) {
+  .hamb {
+    display: block;
+  }
+  nav ul li {
+    display: none;
+  }
+}
+.img2 img {
+  border-top-left-radius: 0px;
+  height: 500px;
+  width: 500px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 3.5rem;
+  background-color: #f40000;
+}
+footer {
+  padding: 80px 13% 70PX;
+}
+
+.footer-content h4 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+.footer-content li {
+  margin-bottom: 10px;
+}
+
+.footer-content li a {
+  display: block;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  gap: 30px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=css.css.map */
